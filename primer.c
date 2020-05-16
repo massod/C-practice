@@ -2,24 +2,21 @@
 /*This is line counting program from ANSI C  Book */
 
 #include <stdio.h>
-
+#define LOWER 0
+#define UPPER 300
+#define STEP 20
 
 int main(int argc, char* argv[]){
     
-    if( argc < 3){
+   //print Fahrenheit - Celsius table
+   int fahr, celsius;
+   
 
-        printf("Error!\n");
-        return 1;
-    }
-
-    int c , nl;
-
-    nl = 0;
-    while((c = getchar()) != EOF){
-        if( c == '\n'){
-            nl++;
-        }
-        printf("%d\n",nl);
-    }
+   fahr = LOWER;
+   while(fahr <= UPPER){
+       celsius = 5 * (fahr-32) / 9;
+       printf("%d\t%d\n",fahr,celsius);
+       fahr = fahr + STEP;
+   }
 
 }
