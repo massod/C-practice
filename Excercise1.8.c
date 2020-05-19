@@ -19,7 +19,7 @@ blanks = 0;
 //as every time the loop returns c needs to be a new get character from getchar()
 // if we did c++ it throws an infinite loop.
 
- for(int c = getchar(); c != 122; c = getchar()){
+ for(int c = getchar(); c != 'z'; c = getchar()){
 
      //in the following branching statements {} is not nessesary if each branch consist a only a single statement
        if( c == '\n')
@@ -31,18 +31,10 @@ blanks = 0;
        else if( c == ' ')
          blanks++;
 
-       printf("%d newlines %d tabs %d blanks\n", new_line,tabs,blanks);
  }
+
+        printf("%d newlines %d tabs %d blanks\n", new_line,tabs,blanks);
   
-   
-
-    
-    
- 
-
-
- 
- 
  
 
 }
